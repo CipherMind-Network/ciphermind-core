@@ -1,0 +1,44 @@
+{
+  "name": "@ciphermind/core",
+  "version": "0.1.0",
+  "description": "Lightweight TypeScript client SDK for the CipherMind off-chain proving backend and Soroban on-chain ZK-proof verification.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "dev": "tsup --watch"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "zk",
+    "zk-proof",
+    "ciphermind",
+    "web3"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@stellar/stellar-sdk": ">=13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
